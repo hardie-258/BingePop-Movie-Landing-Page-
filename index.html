@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="main.css">
+    <title>Movie Landing Page</title>
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">BingePop</a>
+
+        <ul class="nav">
+            <li><a href="#"><i class="fa-solid fa-house-chimney"></i></a></li>
+            <li><a href="#">Adults</a></li>
+            <li><a href="#">Kids</a></li>
+            <li><a href="#">Trend</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+
+        <div class="search-panel">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search" type="text" placeholder="Search">
+        </div>
+    </header>
+
+    <div class="banner" style="background: url('bg-little-mermaid.jpg') no-repeat center/cover;">
+        <!-- Movie Contents -->
+        <div class="content active the-little-mermaid">
+            <img src="the-little-mermaid-title.png" alt="The Little Mermaid Title" class="movie-title" />
+            <h4><span>2023</span><span><i>12+</i></span><span>2h 14min</span><span>Romance</span></h4>
+            <p>A young mermaid makes a deal with a sea witch to trade her voice for legs so she can discover the world
+                above water.</p>
+            <div class="button">
+                <a href="#" class="btn1"><i class="fa-solid fa-play"></i> WATCH</a>
+                <a href="#" class="btn2"><i class="fa-solid fa-plus"></i> MY LIST</a>
+            </div>
+        </div>
+
+        <div class="content 65">
+            <img src="the-65-title.png" alt="65 Movie Title" class="movie-title" />
+            <h4><span>2023</span><span><i>13+</i></span><span>1h 33min</span><span>Sci-Fi</span></h4>
+            <p>After a catastrophic crash on an unknown planet, a pilot discovers he's not alone in a world of
+                prehistoric creatures.</p>
+            <div class="button">
+                <a href="#" class="btn1"><i class="fa-solid fa-play"></i> WATCH</a>
+                <a href="#" class="btn2"><i class="fa-solid fa-plus"></i> MY LIST</a>
+            </div>
+        </div>
+
+        <div class="content the-covenant">
+            <img src="the-covenant-title.png" alt="The Covenant Title" class="movie-title" />
+            <h4><span>2023</span><span><i>15+</i></span><span>2h 3min</span><span>Action</span></h4>
+            <p>A U.S. Army sergeant returns to the battlefield to repay the Afghan interpreter who once saved his life.
+            </p>
+            <div class="button">
+                <a href="#" class="btn1"><i class="fa-solid fa-play"></i> WATCH</a>
+                <a href="#" class="btn2"><i class="fa-solid fa-plus"></i> MY LIST</a>
+            </div>
+        </div>
+
+        <div class="content the-black-demon">
+            <img src="the-black-demon-title.png" alt="The Black Demon Title" class="movie-title" />
+            <h4><span>2023</span><span><i>16+</i></span><span>1h 40min</span><span>Thriller</span></h4>
+            <p>An oil rig turns into a nightmare when a massive megalodon rises from the depths, hungry and vengeful.
+            </p>
+            <div class="button">
+                <a href="#" class="btn1"><i class="fa-solid fa-play"></i> WATCH</a>
+                <a href="#" class="btn2"><i class="fa-solid fa-plus"></i> MY LIST</a>
+            </div>
+        </div>
+
+        <div class="content the-tank">
+            <img src="the-tank-title.png" alt="The Tank Title" class="movie-title" />
+            <h4><span>2023</span><span><i>14+</i></span><span>1h 45min</span><span>Horror</span></h4>
+            <p>After inheriting an abandoned coastal property, a family unlocks terrifying secrets buried beneath their
+                water tank.</p>
+            <div class="button">
+                <a href="#" class="btn1"><i class="fa-solid fa-play"></i> WATCH</a>
+                <a href="#" class="btn2"><i class="fa-solid fa-plus"></i> MY LIST</a>
+            </div>
+        </div>
+
+
+
+        <div class="carousel-box">
+            <div class="carousel">
+                <a class="carousel-item" href="#" onClick="changeBg('bg-little-mermaid.jpg', 'the-little-mermaid');">
+                    <img src="the-little-mermaid.jpeg">
+                </a>
+
+                <a class="carousel-item" href="#" onClick="changeBg('bg-65.jpeg', '65');">
+                    <img src="65.jpg">
+                </a>
+
+                <a class="carousel-item" href="#" onClick="changeBg('bg-the-covenant.jpeg', 'the-covenant');">
+                    <img src="the-covenant.jpg">
+                </a>
+
+                <a class="carousel-item" href="#" onClick="changeBg('bg-the-black-demon.jpeg', 'the-black-demon');">
+                    <img src="the-black-demon.jpg">
+                </a>
+
+                <a class="carousel-item" href="#" onClick="changeBg('bg-the-tank.jpeg', 'the-tank');">
+                    <img src="the-tank.jpeg">
+                </a>
+            </div>
+
+        </div>
+        <a href="#" class="play" onClick="toggleVideo();">
+            <i class="fa-solid fa-circle-play"></i> WATCH TRAILER
+        </a>
+
+
+        <ul class="footer">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+
+    </div>
+    <div class="trailer">
+        <video src="trailer.mp4" muted controls="true" autoplay="true"></video>
+        <img class="close" src="close.png" alt="" onClick="toggleVideo();" />
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+        });
+    </script>
+
+</body>
+
+</html>
