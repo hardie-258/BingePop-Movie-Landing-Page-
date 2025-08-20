@@ -28,3 +28,7 @@ It features smooth animations, a dynamic carousel, and a video modal for playing
 1. Clone this repo:
    ```bash
    git clone https://github.com/hardie-258/BingePop-Movie-Landing-Page-.git
+## Demo Video
+[Click to watch the demo](https://github.com/hardie-258/BingePop-Movie-Landing-Page-/blob/main/demo.mp4)
+
+
